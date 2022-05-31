@@ -1,0 +1,84 @@
+html {
+  font-family: "Satoshi", sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1, h2 {
+  color: #000000; }
+
+p, li {
+  color: #1D1D1F; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 32px;
+  padding-left: 32px; }
+  main .title {
+    text-align: center;
+    margin-top: 48px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35.2px; }
+  main .img-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 375px;
+    height: 450px;
+    background-image: url(../Image/background-mobile.png);
+    margin-bottom: 24px;
+    padding-right: 32px; }
+  main .information {
+    width: 295px;
+    height: 63px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    margin: 0 40px 32px 40px;
+    padding: 0 16px 0 16px; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 28.5px;
+  margin-right: 28.5px; }
+  section .subtitle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34.56px;
+    margin-bottom: 40px; }
+  section .contenedor-icons {
+    display: flex;
+    padding-bottom: 8px;
+    margin-top: 24px;
+    justify-content: space-between;
+    border-style: dotted 2px black; }
+    section .contenedor-icons .title-items {
+      font-weight: 500;
+      font-size: 17px; }
+    section .contenedor-icons .icons {
+      display: flex;
+      justify-content: space-between;
+      width: 50px;
+      align-items: center; }
+  section ul {
+    list-style-type: none;
+    margin-top: 16px;
+    border-bottom-width: 1.4px;
+    border-bottom-style: solid;
+    border-bottom-color: #f2f2f7; }
+    section ul .item {
+      font-weight: 400;
+      font-size: 12px;
+      padding-bottom: 8px; }
+      section ul .item .weight {
+        font-weight: 500; }

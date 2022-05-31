@@ -1,0 +1,22 @@
+//Variables para fuentes
+$fuente: 'Satoshi', sans-serif;
+$color1: #1D1D1F;
+$color2: #000000;
+
+html {
+    font-family: $fuente;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    color: $color2;
+}
+
+p, li {
+    color: $color1;
+}
