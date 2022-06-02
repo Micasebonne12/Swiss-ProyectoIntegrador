@@ -1,16 +1,17 @@
-//Variables para fuentes
+//Variables para fuentes y colores
 $fuente: 'Satoshi', sans-serif;
 $color1: #1D1D1F;
 $color2: #000000;
 
-html {
-    font-family: $fuente;
-}
-
+//Reseteo de estilos por default
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-family: $fuente;
 }
 
 h1, h2{
