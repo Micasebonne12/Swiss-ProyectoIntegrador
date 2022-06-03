@@ -1,8 +1,6 @@
-let arrow = document.querySelectorAll(".chevron");
-let lista = document.querySelectorAll(".lista");
-
-
-arrow.addEventListener("click", ()=> {
-    lista.hide();
-});
-
+$('.chevron').click(function () {
+    $('.lista').hide();
+    $('.chevron').click(function(){
+      $('.lista').show();
+    });
+  }); 

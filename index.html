@@ -6,13 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto integrador</title>
+    <!-- Link a hoja de estilos -->
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Link CDN JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Link fuente -->
     <link href="https://api.fontshare.com/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- Inicio sección principal -->
     <main>
+        <!-- Contenedor título -->
         <div class="container-title">
             <h1 class="title">What's in the box <span class="title-tech">Tech Specs</span></h1><svg class="icon-arrow"
                 width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,11 +39,14 @@
             </svg>
         </div>
 
+        <!-- Contenedor imagen de fondo -->
         <div class="img-container">
-            <ul class="lista-box">
+            <ul>
+                <!-- Contenedor de filas -->
                 <div class="container-filas">
+                    <!-- Contenedor de fila 1 -->
                     <div class="fila1">
-
+                        <!-- Contenedor de Ítem e ícono de la lista -->
                         <div class="item-icon">
                             <img class="redondo" src="./Assets/Box/Icons/faro.fill.svg" alt="">
                             <li>FARO Helmet</li>
@@ -46,6 +56,7 @@
                             <li>User manual</li>
                         </div>
                     </div>
+                    <!-- Contenedor de fila 2 -->
                     <div class="fila2">
                         <div class="item-icon">
                             <img class="redondo" src="./Assets/Box/Icons/navremote.fill.svg" alt="">
@@ -64,11 +75,15 @@
             </ul>
         </div>
 
+        <!-- Párrafo de contenido en Tablet -->
         <p class="information">FARO Helmet, Navigation Remote, USB Type-C Charging Cable, <span class="text"> Rubber
                 Bands and User Manual.</span> <span class="text2">2x Ribbons and Manual.</span></p>
 
     </main>
 
+    <!-- Fin sección principal -->
+
+    <!-- Inicio sección -->
     <section>
         <div class="container-subtitle">
             <h2 class="subtitle"> <span class="subtitle-box">What's in the box</span> Tech Spechs </h2><svg
@@ -90,83 +105,107 @@
             </svg>
         </div>
 
+        <!-- Contenedor todas las listas -->
         <div class="contenedor-details">
+            <!-- Contenedor lista individual -->
             <div class="contenedor-lista right-margin contenedor-lista1">
+                <!-- Contenedor título e íconos -->
                 <div class="contenedor-title-icons">
+                    <!-- Título de lista -->
                     <p class="title-items lights">Front & rear lights</p>
+                    <!-- Contenedor de íconos -->
                     <div class="contenedor-icons">
                         <img src="./Assets/Tech specs/helmet.icon.svg" alt="Icon helmet">
                         <img class="chevron" src="./Assets/Tech specs/chevron.svg" alt="Icon chevron">
                     </div>
                 </div>
 
-                <ul class="lista">
-                    <li class="item"><span class="weight">Total output</span> + 500 lumens</li>
-                    <li class="item"><span class="weight">Weight</span> 580g *Medium size without Mips</li>
-                    <li class="item"><span class="weight">Construction</span> ABS + PS shell + EPS liner</li>
-                    <li class="item"><span class="weight">Ventilation</span> Fixed (5 vents)</li>
-                    <li class="item"><span class="weight">Waterproofing</span> I-PX6</li>
-                    <li class="item"><span class="weight">Certifications</span> CPSC EN1078, AS NZS 2063:2008</li>
+                <!-- Lista -->
+                <ul>
+                    <li><span class="weight">Total output</span> + 500 lumens</li>
+                    <li><span class="weight">Weight</span> 580g *Medium size without Mips</li>
+                    <li><span class="weight">Construction</span> ABS + PS shell + EPS liner</li>
+                    <li><span class="weight">Ventilation</span> Fixed (5 vents)</li>
+                    <li><span class="weight">Waterproofing</span> I-PX6</li>
+                    <li><span class="weight">Certifications</span> CPSC EN1078, AS NZS 2063:2008</li>
                 </ul>
             </div>
 
+            <!-- Contenedor lista individual -->
             <div class="contenedor-lista right-margin contenedor-lista2">
+                 <!-- Contenedor título e íconos -->
                 <div class="contenedor-title-icons">
+                    <!-- Título de lista -->
                     <p class="title-items">Companion App</p>
+                    <!-- Contenedor de íconos -->
                     <div class="contenedor-icons">
                         <img src="./Assets/Tech specs/app.icon.svg" alt="App Icon">
                         <img class="chevron" src="./Assets/Tech specs/chevron.svg" alt="Chevron Icon">
                     </div>
                 </div>
 
-                <ul class="lista">
-                    <li class="item">Fall Detection</li>
-                    <li class="item">Light Customization</li>
-                    <li class="item">Ride tracking</li>
-                    <li class="item">Weather Responsive</li>
-                    <li class="item">Ambient Light Responsive</li>
-                    <li class="item">CO2 Prevention</li>
-                    <li class="item">Daily Challenges</li>
+                <!-- Lista -->
+                <ul>
+                    <li>Fall Detection</li>
+                    <li>Light Customization</li>
+                    <li>Ride tracking</li>
+                    <li>Weather Responsive</li>
+                    <li>Ambient Light Responsive</li>
+                    <li>CO2 Prevention</li>
+                    <li>Daily Challenges</li>
                 </ul>
             </div>
 
+            <!-- Contenedor lista individual -->
             <div class="contenedor-lista right-margin contenedor-lista3">
+                 <!-- Contenedor título e íconos -->
                 <div class="contenedor-title-icons">
+                    <!-- Título de lista -->
                     <p class="title-items">Navigation remote</p>
+                    <!-- Contenedor de íconos -->
                     <div class="contenedor-icons">
                         <img src="./Assets/Tech specs/nav-remote.icon.svg" alt="Remote Icon">
                         <img class="chevron" src="./Assets/Tech specs/chevron.svg" alt="Chevron Icon">
                     </div>
                 </div>
 
-                <ul class="lista">
-                    <li class="item"><span class="weight">Battery life</span> 30 hs of continued use</li>
-                    <li class="item"><span class="weight">Battery type</span> Rechargeable Lithium-ion</li>
-                    <li class="item"><span class="weight">Charging</span> USB Type-C</li>
-                    <li class="item"><span class="weight">Dimensions</span> 34x34x46mm</li>
+                <!-- Lista -->
+                <ul>
+                    <li><span class="weight">Battery life</span> 30 hs of continued use</li>
+                    <li><span class="weight">Battery type</span> Rechargeable Lithium-ion</li>
+                    <li><span class="weight">Charging</span> USB Type-C</li>
+                    <li><span class="weight">Dimensions</span> 34x34x46mm</li>
                 </ul>
             </div>
 
+            <!-- Contenedor lista individual -->
             <div class="contenedor-lista contenedor-lista4">
+                 <!-- Contenedor título e íconos -->
                 <div class="contenedor-title-icons">
+                    <!-- Título de lista -->
                     <p class="title-items">Battery</p>
+                    <!-- Contenedor de íconos -->
                     <div class="contenedor-icons">
                         <img src="./Assets/Tech specs/battery.icon.svg" alt="Battery Icon">
                         <img class="chevron" src="./Assets/Tech specs/chevron.svg" alt="">
                     </div>
                 </div>
-                <ul class="lista">
-                    <li class="item"><span class="weight">Capacity</span> 1850 MAh</li>
-                    <li class="item"><span class="weight">Type</span> Rechargeable Lithium-ion</li>
-                    <li class="item"><span class="weight">Duration</span> Up tp 10hs</li>
-                    <li class="item"><span class="weight">Full Charge</span> 3hs</li>
-                    <li class="item"><span class="weight">Charging Port</span> USB Type-C</li>
+
+                <!-- Lista -->
+                <ul>
+                    <li><span class="weight">Capacity</span> 1850 MAh</li>
+                    <li><span class="weight">Type</span> Rechargeable Lithium-ion</li>
+                    <li><span class="weight">Duration</span> Up tp 10hs</li>
+                    <li><span class="weight">Full Charge</span> 3hs</li>
+                    <li><span class="weight">Charging Port</span> USB Type-C</li>
                 </ul>
             </div>
-
+        </div>
 
     </section>
-    </div>
+    
+    <!-- Fin sección -->
+    <!-- Link script de JS -->
     <script src="./js/main.js"></script>
 </body>
 

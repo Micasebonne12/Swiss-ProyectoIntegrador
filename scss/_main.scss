@@ -1,0 +1,215 @@
+// Estilos de main
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 24px;
+    padding-left: 24px;
+    //Media querys para tablet
+    @media (min-width: 735px){
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media(min-width:810px) and (max-width:1068px){
+        width: 810px;
+        margin: 0 auto;
+    }
+    //Media querys para Desktop
+    @media (min-width:1069px){
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media(min-width:1140px){
+        width: 1140px;
+        margin: 0 auto;
+    }
+    
+
+    //Contenedor de títulos
+    .container-title{
+        margin-top: 48px;
+        @media (min-width: 735px){
+            margin-top: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 95%;
+            position: absolute;
+            margin-top: 40px;
+            margin-bottom: 32px;
+        }
+        //Media Query para Tablet
+        @media(min-width: 810px){
+            width: 810px;
+        }
+        //Media query para Desktop
+        @media (min-width: 1240px){
+            width: 75%;
+        }
+        
+        //Estilo título principal
+        .title{
+            font-weight: 700;
+            font-size: 32px;
+            //Media Query de título para Tablet
+            @media(min-width: 735px){
+                color: $color1;
+            }
+            @media(min-width: 735px) and (max-width:1068px){
+                font-size: 28px;
+            }
+            //Media Query de título para Desktop
+            @media(min-width: 1069px){
+                font-size: 30px;
+            }
+            
+            //Estilo segundo título
+            .title-tech{
+                display: none;
+                @media(min-width: 735px){
+                    display: inline-block;
+                    padding-left: 20px;
+                    color: #C5C5C7;
+               }
+               //Media query para desktop
+               @media(min-width: 1069px){
+                padding-left: 32px;
+            }
+            }
+        }         
+    }    
+
+    //Estilos imagen
+    .img-container{
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100vw;
+        height: 400px;
+        background-image: url(../Image/background-mobile.png);
+        margin-bottom: 24px;
+        //Media query tablet
+        @media (min-width: 735px){
+        background-image: url(../Image/background.png);
+        height: 600px;   
+        margin-bottom: 80px;
+        width: 100%; 
+        }
+
+            //Estilos lista de items dentro de la imagen
+            ul{
+                display: none;
+                //Media query tablet
+                @media (min-width: 735px){
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    padding: 30px;
+                    height: 435px;
+                    width: 300px;
+                    position: absolute;
+                    margin-top: 120px;    
+                }
+                //Media query Desktop
+                @media (min-width: 1069px){
+                    height: 300px;
+                    width: 513px;
+                    margin-top: 170px;    
+                }
+                @media(min-width: 1300px){
+                    margin-left: 30px;
+                }
+
+                
+                    //Contenedor filas de la lista 
+                    .container-filas{
+                        @media (min-width:1069px){
+                            display: flex;
+                            flex-direction: row;    
+                        }
+                        //Filas de lista
+                            .fila1, .fila2{
+                            display: flex;
+                            flex-direction: column;
+                            }
+
+                            .fila2{
+                                display: flex;
+                                flex-direction: column;
+                                @media(min-width: 1069px){
+                                margin-left: -60px;
+                                }
+                            }
+                            }
+                        
+                    //Items dentro de la lista
+                    .item-icon{
+                        font-size: 16px;
+                        font-weight: 500;
+                        width: 80%;
+                        margin: 10px;
+                        margin-left: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        //Media query Desktop
+                        @media (min-width: 1069px){
+                            width: 20vw;
+                            margin-top: 30px;
+                            margin-left: 30px;
+                        }
+                        @media (min-width: 1140px){
+                            margin-left: 0px;   
+                            margin-right: 40px; 
+                        }
+
+                            //Estilo de item redondeado
+                            .redondo{
+                                border-color: #C5C5C7;
+                                border-radius: 50%;
+                                border-style: solid;
+                                padding: 10px;
+                            }
+
+                            li{
+                                padding-left: 20px;
+                            }
+                    }
+                }
+    }
+
+    //Estilo de texto debajo de la imagen
+    .information{
+        width: 280px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 32px; 
+        padding-left: 16px;
+        padding-right: 16px;
+        @media (min-width: 414px){
+            width: 100%;
+        }
+        @media (min-width: 735px){
+            display: none;
+        }
+
+            //Estilos para cambios de texto según tamaño
+            .text{
+                @media (min-width: 414px){
+                    display: none;
+                }
+            }
+
+            .text2{
+                display: none;
+                @media (min-width: 414px){
+                    display: inline-block;
+                }
+            }
+    }
+}

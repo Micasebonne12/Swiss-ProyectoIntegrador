@@ -1,168 +1,41 @@
-// Estilos de main
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-right: 24px;
-    padding-left: 24px;
-    //Media query para tablet
-    @media (min-width: 735px){
-      /*   display: block; */
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    //Contenedor de títulos
-    .container-title{
-        margin-top: 48px;
-        @media (min-width: 735px){
-            margin-top: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 95%;
-            position: absolute;
-            margin-top: 40px;
-            margin-bottom: 32px;
-        }
-        
-        //Estilo título principal
-        .title{
-            font-weight: 700;
-            font-size: 32px;
-            //Media Query de título para Tablet
-            @media(min-width: 735px){
-                color: $color1;
-            }
-            
-            //Estilo segundo título
-            .title-tech{
-                display: none;
-                @media(min-width: 735px){
-                    display: inline-block;
-                    padding-left: 20px;
-                    color: #C5C5C7;
-               }
-            }
-        }         
-    }    
-
-    .img-container{
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100vw;
-        height: 400px;
-        background-image: url(../Image/background-mobile.png);
-        margin-bottom: 24px;
-        @media (min-width: 735px){
-        background-image: url(../Image/background.png);
-        height: 600px;   
-        margin-bottom: 80px; 
-        }
-
-            .lista-box{
-                display: none;
-                @media (min-width: 735px){
-                    display: flex;
-                    flex-direction: column;
-                    list-style: none;
-                    padding: 30px;
-                    height: 435px;
-                    width: 300px;
-                    position: absolute;
-                    margin-top: 120px;    
-                }
-
-                    .container-filas{
-                       /*  width: 100vw; */
-                        @media (min-width:1069px){
-                            display: flex;
-                            flex-direction: row;    
-                        }
-                    }
-                
-                    .item-icon{
-                        font-size: 16px;
-                        font-weight: 500;
-                        width: 80%;
-                        margin: 15px;
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        @media (min-width: 1069px){
-                            width: 25vw;
-                        }
-
-                            .redondo{
-                                border-color: #C5C5C7;
-                                border-radius: 50%;
-                                border-style: solid;
-                                padding: 10px;
-                            }
-
-                            li{
-                                padding-left: 20px;
-                                @media (min-width: 1069px) {
-                                    padding-left: 10px;        
-                                }
-                            }
-                    }
-                }
-    }
-
-    .information{
-        width: 280px;
-        text-align: center;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 21px;
-        margin-bottom: 32px; 
-        padding-left: 16px;
-        padding-right: 16px;
-        @media (min-width: 414px){
-            width: 100%;
-        }
-        @media (min-width: 735px){
-            display: none;
-        }
-
-            .text{
-                @media (min-width: 414px){
-                    display: none;
-                }
-            }
-
-            .text2{
-                display: none;
-                @media (min-width: 414px){
-                    display: inline-block;
-                }
-            }
-    }
-}
-
-
+//Estilos segunda sección
 section{
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
     margin-left: 28.5px;
     margin-right: 28.5px;
+    overflow-x: hidden;
     @media (min-width: 500px) {
         width: 50%;
         margin: 0 auto;
         margin-bottom: 60px;
     }
+    //Media query Tablet
     @media (min-width: 735px) {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
+        margin-bottom: 80px;
+    }
+    @media(min-width:810px){
+        width: 810px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    //Media query Desktop
+    @media(min-width:1069px){
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    @media(min-width:1140px){
+        width: 1140px;
+        margin: 0 auto;
+        margin-bottom: 80px;
     }
 
+    //Contenedor subtítulo
         .container-subtitle{
             display: flex;
             flex-direction: column;
@@ -171,6 +44,7 @@ section{
             justify-content: space-between;
             margin-bottom: 40px;
             margin-top: 60px;
+            //Media query tablet
             @media(min-width:735px){
                 margin-top: 40px;
                 margin-bottom: 40px;
@@ -178,15 +52,22 @@ section{
             }
         }
 
+        //Estilo subtítulo
         .subtitle{
             text-align: center;
             font-weight: 700;
             font-size: 32px;
             line-height: 34.56px;
-           @media(min-width:735px){
+            //Media query Tablet
+           @media(min-width:735px) and (max-width:1068px){
                 font-size: 28px;
             }
+            //Media query Desktop
+            @media (min-width:1068px){
+                font-size: 30px;    
+            }
 
+            //Subtítulo vista Tablet (se agrega una segunda línea de texto)
                 .subtitle-box{
                     display: none;
                     @media(min-width:735px){
@@ -194,29 +75,47 @@ section{
                         padding-right: 20px;
                         color: #C5C5C7;
                     }
+                    @media(min-width:1069px){
+                        padding-right: 32px;
+                    }
                 }
         }
 
+        //Contenedor de todas las listas
         .contenedor-details{
             @media(min-width: 735px){
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
+                margin: 0 auto;
             }
 
+            //Margen derecho para separar listas
                 .right-margin{
+                    //Media query tablet
                     @media(min-width:735px){
                         margin-right: 32px;
                     }
+                    //Media query Desktop
+                    @media(min-width:1069px){
+                        margin-right: 40px;
+                    }
                 }
 
+                //Contenedor de cada una de las listas
                 .contenedor-lista{
                     display: block;
                     margin-top: 24px;
                     justify-content: space-between;
+                    //Media query tablet
                     @media (min-width: 735px) {
                         margin-top: 0;
                     }
+                    //Media query Desktop
+                    @media (min-width: 1240px) {
+                        width: 255px;
+                    }
 
+                        //Contenedor de títulos e íconos
                         .contenedor-title-icons{
                             display: flex;
                             flex-direction: row;
@@ -226,36 +125,50 @@ section{
                             border-bottom-width: 1.4px;
                             border-bottom-style: solid;
                             border-bottom-color: #f2f2f7;
+                            //Media query Tablet
                             @media (min-width: 735px) {
                                 padding-bottom: 10px;
                                 align-items: center;
                                 width: 149.75px;
                             }
+                            //Media query Desktop
+                            @media (min-width: 1069px) {
+                                padding-bottom: 12px;
+                                align-items: center;
+                                width: 227.25px;
+                            }
 
+                                //Título de los ítems dentro de las listas
                                 .title-items{
                                     font-weight: 500;
                                     font-size: 17px; 
+                                    //Media queries Tablet
                                     @media(min-width:735px){
                                         font-size: 20px;
-                                    } 
-                                }
-
-                                .lights{
-                                    @media(min-width:735px){
-                                        width: 15vw;
                                     }
+                                    @media (min-width: 810px) and (max-width:1068px){
+                                        font-size: 18px;
+                                        font-weight: 700;
+                                    }
+                                    //Media query Desktop
+                                    @media(min-width:1069px){
+                                        font-size: 20px;
+                                    }  
                                 }
                         }
 
+                            //Contenedor de los íconos
                             .contenedor-icons{
                                 display: flex;
                                 justify-content: space-between;
                                 width: 50px;
                                 align-items: center;
+                                //Media query Tablet
                                 @media (min-width:735px){
                                     justify-content: flex-end;
                                 }
 
+                                    //Estilo de ícono chevron
                                     .chevron{
                                         @media (min-width:735px){
                                             display: none;
@@ -263,26 +176,44 @@ section{
                                     }
                             }
 
-                    .lista {
+                    //Estilo de cada lista
+                    ul {
                         display: flex;
                         flex-wrap: wrap;
                         flex-direction: column;
                         list-style-type: none;
                         margin-top: 16px;
+                        //Media query Tablet
                         @media (min-width: 735px){
                             margin-top: 20px;
                         }
+                        //Media query Desktop
+                        @media (min-width: 1069px){
+                            margin-top: 24px;
+                        }
 
-                        .item{
+                        //Cada elemento dentro de la lista
+                        li{
                             font-weight: 400;
                             font-size: 12px;
                             padding-bottom: 8px;
+                            //Media queries Tablet
                             @media (min-width: 735px){
                                 font-size: 15px;
                                 padding-bottom: 10px;
-                                width: 20vw;
+                                width: 149.75px;
+                            }
+                            @media(min-width:810px){
+                                width: 178px;
+                            }
+                            //Media query Desktop
+                            @media (min-width: 1069px){
+                                width: 227.75px;
+                                font-size: 16px;
+                                padding-bottom: 12px;
                             }
 
+                            //Estilo negrita
                             .weight{
                                 font-weight: 500;
                             }
@@ -300,6 +231,7 @@ section{
 
 .contenedor-lista2{
     order: 2;
+    //Media query a partir Tablet
     @media (min-width:735px) {
         order: 3;
     }
@@ -307,6 +239,7 @@ section{
 
 .contenedor-lista3{
     order: 3;
+    //Media query a partir de Tablet
     @media (min-width:735px) {
         order: 2;
     }
@@ -322,4 +255,4 @@ section{
     @media(min-width:735px){
         display: flex;
     }
-}  
+}
