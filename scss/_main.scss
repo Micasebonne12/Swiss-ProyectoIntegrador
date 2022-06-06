@@ -109,13 +109,13 @@ main{
                     list-style: none;
                     padding: 20px;
                     position: absolute;
-                    margin-top: 100px;    
+                    margin-top: 150px;    
                 }
                 //Media query Desktop
                 @media (min-width: 1069px){
                     height: 300px;
                     width: 513px;
-                    margin-top: 140px;    
+                    margin-top: 200px;    
                 }
                 @media(min-width: 1300px){
                     margin-left: 30px;
@@ -210,15 +210,19 @@ main{
     }
 }
 
-.check .inactive{
-    display: none;
-}
-
-.active{
+.check{
     background-color: #FF5640;
     border-radius: 50%;
     padding: 5px;
     float: right;
     position: relative;
     z-index: 1;
+}
+
+.hover {
+    background-color: white;
+        path{
+            border-color: white;
+            fill: #FF5640;
+        }
 }

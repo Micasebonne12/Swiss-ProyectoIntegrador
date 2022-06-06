@@ -100,12 +100,12 @@ main {
           list-style: none;
           padding: 20px;
           position: absolute;
-          margin-top: 100px; } }
+          margin-top: 150px; } }
       @media (min-width: 1069px) {
         main .img-container ul {
           height: 300px;
           width: 513px;
-          margin-top: 140px; } }
+          margin-top: 200px; } }
       @media (min-width: 1300px) {
         main .img-container ul {
           margin-left: 30px; } }
@@ -168,16 +168,19 @@ main {
         main .information .text2 {
           display: inline-block; } }
 
-.check .inactive {
-  display: none; }
-
-.active {
+.check {
   background-color: #FF5640;
   border-radius: 50%;
   padding: 5px;
   float: right;
   position: relative;
   z-index: 1; }
+
+.hover {
+  background-color: white; }
+  .hover path {
+    border-color: white;
+    fill: #FF5640; }
 
 section {
   display: flex;
@@ -192,9 +195,8 @@ section {
   @media (min-width: 735px) {
     section {
       display: none;
-      /* 
-        width: 100%;
-        margin-bottom: 80px; */ } }
+      width: 100%;
+      margin-bottom: 80px; } }
   @media (min-width: 810px) {
     section {
       width: 810px;
