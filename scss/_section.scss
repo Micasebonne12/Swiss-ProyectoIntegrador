@@ -5,6 +5,10 @@ section{
     margin-bottom: 60px;
     margin-left: 28.5px;
     margin-right: 28.5px;
+    @media (min-width: 600px){
+        width: 50%;
+        margin: 0 auto;
+    }
     //Media query Tablet
     @media (min-width: 735px) {
         display: none;/* 

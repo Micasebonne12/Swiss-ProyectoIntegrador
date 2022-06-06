@@ -98,16 +98,14 @@ main {
           display: flex;
           flex-direction: column;
           list-style: none;
-          padding: 30px;
-          height: 435px;
-          width: 300px;
+          padding: 20px;
           position: absolute;
-          margin-top: 120px; } }
+          margin-top: 100px; } }
       @media (min-width: 1069px) {
         main .img-container ul {
           height: 300px;
           width: 513px;
-          margin-top: 170px; } }
+          margin-top: 140px; } }
       @media (min-width: 1300px) {
         main .img-container ul {
           margin-left: 30px; } }
@@ -123,7 +121,7 @@ main {
         flex-direction: column; }
         @media (min-width: 1069px) {
           main .img-container ul .container-filas .fila2 {
-            margin-left: -60px; } }
+            margin-left: 10px; } }
       main .img-container ul .item-icon {
         font-size: 16px;
         font-weight: 500;
@@ -135,13 +133,7 @@ main {
         align-items: center; }
         @media (min-width: 1069px) {
           main .img-container ul .item-icon {
-            width: 20vw;
-            margin-top: 30px;
-            margin-left: 30px; } }
-        @media (min-width: 1140px) {
-          main .img-container ul .item-icon {
-            margin-left: 0px;
-            margin-right: 40px; } }
+            margin-bottom: 40px; } }
         main .img-container ul .item-icon .redondo {
           border-color: #C5C5C7;
           border-radius: 50%;
@@ -149,6 +141,9 @@ main {
           padding: 10px; }
         main .img-container ul .item-icon li {
           padding-left: 20px; }
+          @media (min-width: 1069px) {
+            main .img-container ul .item-icon li {
+              padding-left: 10px; } }
   main .information {
     width: 280px;
     text-align: center;
@@ -173,12 +168,27 @@ main {
         main .information .text2 {
           display: inline-block; } }
 
+.check .inactive {
+  display: none; }
+
+.active {
+  background-color: #FF5640;
+  border-radius: 50%;
+  padding: 5px;
+  float: right;
+  position: relative;
+  z-index: 1; }
+
 section {
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
   margin-left: 28.5px;
   margin-right: 28.5px; }
+  @media (min-width: 600px) {
+    section {
+      width: 50%;
+      margin: 0 auto; } }
   @media (min-width: 735px) {
     section {
       display: none;
